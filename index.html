@@ -1,249 +1,691 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    body {background-color: #ecf3ff}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px '.SF NS'; color: #0000e9; -webkit-text-stroke: #0000e9}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.6px '.Apple Color Emoji UI'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94; background-color: #ecf3ff; background-color: rgba(236, 243, 255, 0.88)}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #0d172e; -webkit-text-stroke: #0d172e; min-height: 15.0px}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #0640a9; -webkit-text-stroke: #0640a9; background-color: #0640a9; min-height: 11.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #0640a9; -webkit-text-stroke: #0640a9}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.2px '.SF NS'; color: #3a5a94; -webkit-text-stroke: #3a5a94; min-height: 16.0px}
-    p.p10 {margin: 0.0px 0.0px 24.0px 0.0px; font: 11.6px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 12.0px}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #3a5a94; -webkit-text-stroke: #3a5a94; min-height: 12.0px}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 48.0px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #ffffff}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 26.4px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p17 {margin: 0.0px 0.0px 6.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #0640a9; -webkit-text-stroke: #0640a9}
-    p.p19 {margin: 0.0px 0.0px 12.0px 0.0px; font: 11.6px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.4px '.SF NS'; color: #0640a9; -webkit-text-stroke: #0640a9; background-color: #d3e4fe}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.4px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e}
-    p.p23 {margin: 0.0px 0.0px 30.0px 0.0px; font: 11.6px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.6px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #0640a9}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.6px '.SF NS'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #5800d0; -webkit-text-stroke: #5800d0}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.6px 'Helvetica Neue'; color: #0d172e; -webkit-text-stroke: #0d172e}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.8px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #17702f; -webkit-text-stroke: #17702f}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #1634cf; -webkit-text-stroke: #1634cf}
-    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #89003c; -webkit-text-stroke: #89003c}
-    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #b32d0d; -webkit-text-stroke: #b32d0d}
-    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #8e4f0a; -webkit-text-stroke: #8e4f0a}
-    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.2px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.2px '.SF NS'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e; background-color: #0640a9; min-height: 12.0px}
-    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e; background-color: #ecf3ff}
-    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e}
-    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #0d172e; -webkit-text-stroke: #0d172e}
-    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #0640a9; -webkit-text-stroke: #0640a9}
-    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px '.SF NS'; color: #0640a9; -webkit-text-stroke: #0640a9; background-color: #d3e4fe}
-    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e}
-    p.p46 {margin: 0.0px 0.0px 21.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.8px 'Helvetica Neue'; color: #0640a9; -webkit-text-stroke: #0640a9}
-    p.p48 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.8px 'Helvetica Neue'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #3a5a94; -webkit-text-stroke: #3a5a94}
-    span.s1 {font-kerning: none; background-color: rgba(236, 243, 255, 0.88)}
-    span.s2 {background-color: rgba(236, 243, 255, 0.88); -webkit-text-stroke: 0px #000000}
-    span.s3 {font-kerning: none}
-    span.s4 {font-kerning: none; background-color: #d3e4fe}
-    span.s5 {font: 10.5px '.SF NS'; font-kerning: none; color: #ffffff; background-color: transparent; -webkit-text-stroke: 0px #ffffff}
-    span.s6 {font: 10.5px '.SF NS'; font-kerning: none; background-color: transparent}
-    span.s7 {font-kerning: none; background-color: #ffffff}
-    span.s8 {font-kerning: none; background-color: #ecf3ff}
-    span.s9 {font-kerning: none; background-color: #e8e3fe}
-    span.s10 {font: 11.6px 'Helvetica Neue'; font-kerning: none; color: #0d172e; -webkit-text-stroke: 0px #0d172e}
-    span.s11 {font-kerning: none; color: #0d172e; background-color: #ffffff; -webkit-text-stroke: 0px #0d172e}
-    span.s12 {font: 9.8px '.SF NS'; font-kerning: none; color: #0640a9; background-color: #ffffff; -webkit-text-stroke: 0px #0640a9}
-    span.s13 {font-kerning: none; background-color: #d5fde1}
-    span.s14 {font-kerning: none; background-color: #fbe0f0}
-    span.s15 {font-kerning: none; background-color: #fff5e9}
-    span.s16 {font-kerning: none; background-color: #fef9b6}
-    span.s17 {font: 10.8px '.SF NS'; font-kerning: none; color: #0d172e; -webkit-text-stroke: 0px #0d172e}
-    span.s18 {font: 10.8px 'Helvetica Neue'; font-kerning: none}
-    span.s19 {font: 9.8px 'Helvetica Neue'; font-kerning: none; color: #0640a9; background-color: transparent; -webkit-text-stroke: 0px #0640a9}
-    ul.ul1 {list-style-type: none}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruixi Li — Computational Biology Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <style>
+        :root {
+            --bg: #f0f6ff;
+            --bg-card: #ffffff;
+            --text: #0f1f3d;
+            --text-muted: #4a6fa5;
+            --accent: #0057b8;
+            --accent-bg: #dbeafe;
+            --border: #bfdbfe;
+            --shadow: rgba(0, 87, 184, 0.12);
+            --gradient: linear-gradient(135deg, #0057b8 0%, #0ea5e9 100%);
+        }
+        [data-theme="dark"] {
+            --bg: #0a1628;
+            --bg-card: #0f2040;
+            --text: #e2edff;
+            --text-muted: #7ea8d8;
+            --accent: #3b82f6;
+            --accent-bg: #1e3a5f;
+            --border: #1e3a5f;
+            --shadow: rgba(59, 130, 246, 0.15);
+            --gradient: linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 100%);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg); color: var(--text);
+            line-height: 1.7; transition: background 0.3s, color 0.3s;
+            overflow-x: hidden;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            backdrop-filter: blur(16px);
+            background: rgba(240,246,255,0.88);
+            border-bottom: 1px solid var(--border);
+            transition: background 0.3s, border-color 0.3s;
+        }
+        [data-theme="dark"] nav { background: rgba(10,22,40,0.88); }
+        .nav-inner {
+            max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 62px;
+        }
+        .nav-logo {
+            font-weight: 800; font-size: 1.15rem; text-decoration: none;
+            background: var(--gradient); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--accent); }
+        .theme-btn {
+            background: none; border: 1.5px solid var(--border); border-radius: 50px;
+            padding: 5px 14px; cursor: pointer; color: var(--text-muted);
+            font-size: 0.8rem; display: flex; align-items: center; gap: 6px;
+            transition: all 0.2s; font-family: inherit;
+        }
+        .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .moon { display: block; } .sun { display: none; }
+        [data-theme="dark"] .moon { display: none; }
+        [data-theme="dark"] .sun { display: block; }
+
+        /* HERO */
+        #hero {
+            min-height: 100vh; display: flex; align-items: center;
+            position: relative; overflow: hidden; padding-top: 62px;
+        }
+        .hero-mesh {
+            position: absolute; inset: 0; z-index: 0;
+            background:
+                radial-gradient(ellipse at 80% 20%, rgba(0,87,184,0.12) 0%, transparent 55%),
+                radial-gradient(ellipse at 20% 80%, rgba(14,165,233,0.08) 0%, transparent 50%);
+        }
+        .hero-orbs { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+        .orb { position: absolute; border-radius: 50%; background: var(--gradient); filter: blur(55px); animation: drift 8s ease-in-out infinite; }
+        .o1 { width: 420px; height: 420px; top: -120px; right: -80px; opacity: 0.07; animation-delay: 0s; }
+        .o2 { width: 200px; height: 200px; top: 55%; right: 18%; opacity: 0.05; animation-delay: 3s; }
+        .o3 { width: 110px; height: 110px; bottom: 12%; left: 8%; opacity: 0.04; animation-delay: 6s; }
+        @keyframes drift {
+            0%,100% { transform: translate(0,0) scale(1); }
+            33% { transform: translate(14px,-18px) scale(1.05); }
+            66% { transform: translate(-10px,10px) scale(0.97); }
+        }
+        .hero-content {
+            max-width: 1100px; margin: 0 auto; padding: 5rem 2rem;
+            display: grid; grid-template-columns: 1fr 280px;
+            gap: 5rem; align-items: center; z-index: 1; position: relative; width: 100%;
+        }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--accent-bg); color: var(--accent);
+            padding: 5px 14px; border-radius: 50px; font-size: 0.8rem;
+            font-weight: 700; margin-bottom: 1.25rem; border: 1px solid var(--border);
+        }
+        .edot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease infinite; }
+        @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+        h1.name {
+            font-size: clamp(2.8rem,5vw,4rem); font-weight: 800; line-height: 1.05;
+            background: var(--gradient); -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; background-clip: text;
+            margin-bottom: 1rem; letter-spacing: -1px;
+        }
+        .typed-line { font-size: 1.05rem; color: var(--text-muted); font-weight: 500; margin-bottom: 1.5rem; min-height: 1.8rem; }
+        .cursor {
+            display: inline-block; width: 2px; height: 1em;
+            background: var(--accent); margin-left: 2px;
+            animation: blink 1s step-end infinite; vertical-align: middle;
+        }
+        @keyframes blink { 50%{opacity:0} }
+        .hero-bio { color: var(--text-muted); max-width: 560px; margin-bottom: 2rem; font-size: 0.97rem; line-height: 1.75; }
+        .hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 11px 22px; border-radius: 9px; font-weight: 600;
+            font-size: 0.875rem; text-decoration: none; transition: all 0.22s;
+            font-family: inherit; cursor: pointer; border: none;
+        }
+        .btn-primary { background: var(--gradient); color: white; box-shadow: 0 4px 20px var(--shadow); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px var(--shadow); }
+        .btn-ghost { border: 1.5px solid var(--border); color: var(--text-muted); background: transparent; }
+        .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+
+        .avatar-wrap { display: flex; justify-content: center; }
+        .avatar-ring {
+            width: 260px; height: 260px; border-radius: 50%;
+            background: var(--gradient); padding: 4px;
+            box-shadow: 0 20px 60px var(--shadow);
+            animation: rpulse 3s ease-in-out infinite;
+        }
+        @keyframes rpulse { 0%,100%{box-shadow:0 20px 60px var(--shadow)} 50%{box-shadow:0 20px 80px rgba(0,87,184,0.28)} }
+        .avatar-inner { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background: var(--bg-card); }
+        .avatar-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .avatar-initials {
+            width: 100%; height: 100%; background: var(--gradient);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4rem; font-weight: 800; color: white; letter-spacing: -2px;
+        }
+
+        /* STATS BAR */
+        #stats { background: var(--gradient); padding: 2.5rem 2rem; }
+        .stats-row { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; text-align: center; }
+        .stat { color: white; }
+        .stat-n { font-size: 2.2rem; font-weight: 800; display: block; line-height: 1; }
+        .stat-l { font-size: 0.78rem; opacity: 0.82; margin-top: 5px; }
+
+        /* SECTIONS */
+        section { padding: 5.5rem 2rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .alt { background: var(--bg-card); }
+        .slabel { font-size: 0.72rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+        .stitle { font-size: clamp(1.8rem,3vw,2.5rem); font-weight: 800; margin-bottom: 0.75rem; line-height: 1.15; letter-spacing: -0.5px; }
+        .ssub { color: var(--text-muted); max-width: 580px; margin-bottom: 2.5rem; font-size: 0.97rem; }
+
+        /* REVEAL */
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.visible { opacity: 1; transform: none; }
+
+        /* ABOUT */
+        .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start; }
+        .about-body p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.97rem; }
+        .itags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.75rem; }
+        .itag {
+            background: var(--accent-bg); color: var(--accent);
+            padding: 5px 13px; border-radius: 50px; font-size: 0.78rem;
+            font-weight: 600; border: 1px solid var(--border); cursor: default; transition: all 0.2s;
+        }
+        .itag:hover { background: var(--accent); color: white; border-color: var(--accent); transform: translateY(-2px); }
+        .info-cards { display: flex; flex-direction: column; gap: 0.75rem; }
+        .icard {
+            background: var(--bg); border: 1px solid var(--border);
+            border-radius: 12px; padding: 1.2rem 1.5rem; transition: all 0.22s; cursor: default;
+        }
+        .icard:hover { border-color: var(--accent); transform: translateX(5px); box-shadow: 0 4px 20px var(--shadow); }
+        .icard-l { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 4px; }
+        .icard-v { font-size: 0.95rem; font-weight: 600; }
+
+        /* PUBLICATIONS */
+        .pub-filters { display: flex; gap: 0.75rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .filt {
+            padding: 6px 16px; border-radius: 8px; border: 1.5px solid var(--border);
+            background: transparent; color: var(--text-muted); cursor: pointer;
+            font-size: 0.8rem; font-weight: 600; transition: all 0.2s; font-family: inherit;
+        }
+        .filt.active, .filt:hover { background: var(--accent); color: white; border-color: var(--accent); }
+        .pub-list { display: flex; flex-direction: column; gap: 0.9rem; }
+        .pub {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 14px; padding: 1.5rem 1.75rem;
+            border-left: 4px solid transparent; transition: all 0.25s;
+        }
+        .pub:hover { border-left-color: var(--accent); transform: translateX(5px); box-shadow: 0 8px 28px var(--shadow); }
+        .pub[data-hidden="1"] { display: none; }
+        .pbadge {
+            display: inline-block; padding: 2px 9px; border-radius: 5px;
+            font-size: 0.68rem; font-weight: 700; margin-bottom: 0.6rem;
+            text-transform: uppercase; letter-spacing: 0.4px;
+        }
+        .b1 { background:#ede9fe; color:#6d28d9; }
+        .b2 { background:#dcfce7; color:#15803d; }
+        .b3 { background:#dbeafe; color:#1d4ed8; }
+        .b4 { background:#fce7f3; color:#9d174d; }
+        .b5 { background:#fff7ed; color:#c2410c; }
+        .b6 { background:#fef9c3; color:#a16207; }
+        .pub-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.4; }
+        .pub-title a { color: var(--text); text-decoration: none; }
+        .pub-title a:hover { color: var(--accent); }
+        .pub-meta { font-size: 0.82rem; color: var(--text-muted); }
+        .pub-me { font-weight: 700; color: var(--text); }
+        .pub-journal { font-style: italic; color: var(--accent); font-weight: 500; }
+
+        /* SKILLS */
+        .stabs { display: flex; gap: 0.75rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stab {
+            padding: 8px 18px; border-radius: 9px; border: 1.5px solid var(--border);
+            background: transparent; color: var(--text-muted); cursor: pointer;
+            font-size: 0.85rem; font-weight: 600; transition: all 0.2s; font-family: inherit;
+        }
+        .stab.on { background: var(--gradient); color: white; border-color: transparent; }
+        .stab:hover:not(.on) { border-color: var(--accent); color: var(--accent); }
+        .spane { display: none; }
+        .spane.on { display: block; }
+        .sgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(195px,1fr)); gap: 0.7rem; }
+        .sk {
+            display: flex; align-items: center; gap: 10px;
+            background: var(--bg); border: 1px solid var(--border);
+            border-radius: 10px; padding: 12px 16px;
+            font-size: 0.875rem; font-weight: 500; transition: all 0.2s; cursor: default;
+        }
+        .sk:hover { border-color: var(--accent); background: var(--accent-bg); color: var(--accent); transform: translateY(-2px); }
+        .sdot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+        /* TIMELINE */
+        .tl { position: relative; padding-left: 2rem; }
+        .tl::before { content:''; position:absolute; left:7px; top:10px; bottom:10px; width:2px; background: linear-gradient(to bottom, var(--accent), transparent); }
+        .tli { position: relative; padding-left: 1.75rem; margin-bottom: 2.75rem; }
+        .tldot { position:absolute; left:-1.93rem; top:5px; width:16px; height:16px; border-radius:50%; background:var(--gradient); border:2.5px solid var(--bg); box-shadow:0 0 0 2px var(--accent); }
+        .tldate { font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
+        .tltitle { font-weight:700; font-size:1.05rem; margin-bottom:2px; }
+        .tlorg { color:var(--accent); font-weight:600; font-size:0.875rem; margin-bottom:0.5rem; }
+        .tldesc { color:var(--text-muted); font-size:0.875rem; line-height:1.65; }
+        .tltags { display:flex; flex-wrap:wrap; gap:5px; margin-top:0.75rem; }
+        .tltag { font-size:0.72rem; background:var(--accent-bg); color:var(--accent); padding:3px 9px; border-radius:5px; font-weight:600; }
+
+        /* CONTACT */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+        .clinks { display: flex; flex-direction: column; gap: 0.875rem; }
+        .clink {
+            display: flex; align-items: center; gap: 1rem;
+            background: var(--bg); border: 1px solid var(--border);
+            border-radius: 13px; padding: 1rem 1.25rem;
+            text-decoration: none; color: var(--text); transition: all 0.22s;
+        }
+        .clink:hover { border-color: var(--accent); background: var(--accent-bg); transform: translateX(5px); box-shadow: 0 4px 20px var(--shadow); }
+        .cicon { width:42px; height:42px; border-radius:11px; background:var(--accent-bg); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+        .cicon svg { width:20px; height:20px; fill:var(--accent); }
+        .clbl { font-size:0.7rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:1px; }
+        .cval { font-weight:600; font-size:0.9rem; }
+        .ccta { background:var(--gradient); border-radius:20px; padding:2.5rem 2rem; color:white; text-align:center; }
+        .ccta h3 { font-size:1.5rem; font-weight:800; margin-bottom:0.75rem; }
+        .ccta p { opacity:0.88; margin-bottom:1.75rem; font-size:0.92rem; line-height:1.65; }
+        .btn-w { display:inline-block; background:white; color:var(--accent); padding:11px 26px; border-radius:9px; font-weight:700; text-decoration:none; font-size:0.9rem; transition:all 0.2s; }
+        .btn-w:hover { transform:translateY(-2px); box-shadow:0 10px 25px rgba(0,0,0,0.18); }
+
+        /* FOOTER */
+        footer { text-align:center; padding:2.25rem; color:var(--text-muted); font-size:0.82rem; border-top:1px solid var(--border); }
+        footer a { color:var(--accent); text-decoration:none; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-content { grid-template-columns: 1fr; text-align: center; }
+            .avatar-wrap { order: -1; }
+            .avatar-ring { width: 180px; height: 180px; }
+            .hero-btns { justify-content: center; }
+            .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: repeat(2,1fr); }
+            .nav-links { display: none; }
+        }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1"><b>Ruixi Li</b><b></b></span></p>
-<ul class="ul1">
-  <li class="li2"><span class="s2"></span><span class="s1">About</span></li>
-  <li class="li2"><span class="s2"></span><span class="s1">Publications</span></li>
-  <li class="li2"><span class="s2"></span><span class="s1">Skills</span></li>
-  <li class="li2"><span class="s2"></span><span class="s1">Experience</span></li>
-  <li class="li2"><span class="s2"></span><span class="s1">Contact</span></li>
-</ul>
-<p class="p3"><span class="s1">🌙</span></p>
-<p class="p4"><span class="s3">Toggle</span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p6"><span class="s3"><b></b></span><br></p>
-<p class="p7"><span class="s4"><b>Computational Biologist &amp; Genomics Researcher</b><b></b></span></p>
-<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 40.0px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e"><span class="s3"><b>Ruixi Li</b></span></h1>
-<p class="p9"><span class="s3"></span><br></p>
-<p class="p10"><span class="s3">Research Associate at Columbia University studying the molecular mechanisms of Alzheimer's disease. Incoming PhD student in Computational Biology. Passionate about multi-omics, statistical genetics, and systems approaches to aging and neurological disorders.</span></p>
-<p class="p11"><span class="s3"><a href="mailto:rl60731470@gmail.com"><b></b></a></span><br></p>
-<p class="p12"><span class="s3"><a href="mailto:rl60731470@gmail.com"><b>Get in Touch</b><span class="s5"><b></b></span></a></span></p>
-<p class="p13"><span class="s3"><a href="https://github.com/rl3328"><b></b></a></span><br></p>
-<p class="p2"><span class="s3"><a href="https://github.com/rl3328"><b>GitHub</b><span class="s6"><b></b></span></a></span></p>
-<p class="p13"><span class="s3"><a href="https://www.linkedin.com/in/ruixi-li"><b></b></a></span><br></p>
-<p class="p2"><span class="s3"><a href="https://www.linkedin.com/in/ruixi-li"><b>LinkedIn</b><span class="s6"><b></b></span></a></span></p>
-<p class="p14"><span class="s3"><b>RL</b><b></b></span></p>
-<p class="p15"><span class="s3"><b>0</b></span></p>
-<p class="p16"><span class="s3">Publications &amp; Preprints</span></p>
-<p class="p15"><span class="s3"><b>0</b></span></p>
-<p class="p16"><span class="s3">Lead Author Projects</span></p>
-<p class="p15"><span class="s3"><b>0</b></span></p>
-<p class="p16"><span class="s3">Research Projects at Columbia</span></p>
-<p class="p15"><span class="s3"><b>0</b></span></p>
-<p class="p16"><span class="s3">Graduate Degrees</span></p>
-<p class="p17"><span class="s7"><b>ABOUT</b><b></b></span></p>
-<h2 style="margin: 0.0px 0.0px 9.0px 0.0px; font: 24.0px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e"><span class="s7"><b>Who I Am</b><b></b></span></h2>
-<p class="p19"><span class="s7">I'm currently working as a Research Associate at Columbia University's Gertrude H. Sergievsky Center in statistical and functional genomics, with a focus on Alzheimer's disease. My research interests lie in computational and systems biology, especially in aging, oncology, and neuropsychological disorders, using multi-omics data analysis.</span></p>
-<p class="p19"><span class="s7">I have a solid foundation in biological signaling pathways and cellular mechanisms, supported by hands-on wet lab training. During my graduate studies, I also gained experience in causal inference and quantitative methods in epidemiological research.</span></p>
-<p class="p19"><span class="s7">I thrive in interdisciplinary environments, am a fast learner, and deeply value collaborative science — bridging the gap between dry and wet lab approaches in molecular and computational biology.</span></p>
-<p class="p20"><span class="s3"><b>Alzheimer's Disease</b></span></p>
-<p class="p20"><span class="s3"><b>xQTL Mapping</b></span></p>
-<p class="p20"><span class="s3"><b>Multi-omics</b></span></p>
-<p class="p20"><span class="s3"><b>Statistical Genetics</b></span></p>
-<p class="p20"><span class="s3"><b>Fine-mapping</b></span></p>
-<p class="p20"><span class="s3"><b>Neuroimaging</b></span></p>
-<p class="p20"><span class="s3"><b>Causal Inference</b></span></p>
-<p class="p20"><span class="s3"><b>Machine Learning</b></span></p>
-<p class="p20"><span class="s3"><b>Aging Biology</b></span></p>
-<p class="p20"><span class="s3"><b>Systems Biology</b></span></p>
-<p class="p21"><span class="s8"><b>CURRENT ROLE</b><b></b></span></p>
-<p class="p22"><span class="s8"><b>Research Associate, Columbia University Sergievsky Center</b><b></b></span></p>
-<p class="p21"><span class="s8"><b>UPCOMING</b><b></b></span></p>
-<p class="p22"><span class="s8"><b>Incoming PhD Student, Computational Biology · Fall 2026</b><b></b></span></p>
-<p class="p21"><span class="s8"><b>EDUCATION</b><b></b></span></p>
-<p class="p22"><span class="s8"><b>MPH, Columbia (GPA 4.07) · MBBS, West China Medical School (Rank 2)</b><b></b></span></p>
-<p class="p21"><span class="s8"><b>PROFESSIONAL MEMBERSHIP</b><b></b></span></p>
-<p class="p22"><span class="s8"><b>FunGen-xQTL Consortium · ASHG (2025–)</b><b></b></span></p>
-<p class="p21"><span class="s8"><b>INFRASTRUCTURE</b><b></b></span></p>
-<p class="p22"><span class="s8"><b>AWS S3 / EC2 · HPC (SLURM) · Large-scale bioinformatics pipelines</b><b></b></span></p>
-<p class="p17"><span class="s3"><b>RESEARCH</b></span></p>
-<h2 style="margin: 0.0px 0.0px 9.0px 0.0px; font: 24.0px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e"><span class="s3"><b>Publications &amp; Preprints</b></span></h2>
-<p class="p23"><span class="s3">Focused on Alzheimer's disease functional genomics, statistical fine-mapping, and multi-omics integration.</span></p>
-<p class="p24"><span class="s3"><b>All</b></span></p>
-<p class="p25"><span class="s3"><b>Lead Author</b></span></p>
-<p class="p25"><span class="s3"><b>Preprints</b></span></p>
-<p class="p25"><span class="s3"><b>Published</b></span></p>
-<p class="p26"><span class="s9"><b>★ LEAD AUTHOR · IN SUBMISSION → NATURE AGING</b><b></b></span></p>
-<p class="p27"><span class="s7"><a href="https://doi.org/10.1101/2025.11.25.25340884"><b>Neuroimaging-derived brain endophenotypes link molecular mechanisms to Alzheimer's disease and aging</b><span class="s10"><b></b></span></a></span></p>
-<p class="p28"><span class="s11"><b>Li R</b></span><span class="s7">, Feng R, Liu A, Cao X, De Jager P, Bennett D, The FunGen-AD Consortium, Davatzikos C*, Wen J* &amp; Wang G* · </span><span class="s12"><i>medRxiv</i></span><span class="s7"> · 2025</span></p>
-<p class="p29"><span class="s13"><b>UNDER REVIEW → NATURE METHODS</b><b></b></span></p>
-<p class="p27"><span class="s7"><a href="https://doi.org/10.1101/2025.05.16.654543"><b>Accounting for uncertainty in residual variances improves calibration of the "Sum of Single Effects" model for small sample sizes</b><span class="s10"><b></b></span></a></span></p>
-<p class="p28"><span class="s7">Denault WR, Carbonetto P, </span><span class="s11"><b>Li R</b></span><span class="s7">, FunGen-AD Consortium, Wang G* &amp; Stephens M* · </span><span class="s12"><i>bioRxiv</i></span><span class="s7"> · 2025</span></p>
-<p class="p30"><span class="s4"><b>IN SUBMISSION → GENOME BIOLOGY</b><b></b></span></p>
-<p class="p27"><span class="s7"><a href="https://doi.org/10.1101/2025.11.25.690514"><b>SuSiE 2.0: improved methods and implementations for genetic fine-mapping and phenotype prediction</b><span class="s10"><b></b></span></a></span></p>
-<p class="p28"><span class="s7">McCreight A, Cho Y, </span><span class="s11"><b>Li R</b></span><span class="s7">, Nachun D, Gan H, Carbonetto P, Stephens M, Denault WRP* &amp; Wang G* · </span><span class="s12"><i>bioRxiv</i></span><span class="s7"> · 2025</span></p>
-<p class="p31"><span class="s14"><b>IN SUBMISSION → NATURE NEUROSCIENCE</b><b></b></span></p>
-<p class="p27"><span class="s7"><a href="https://doi.org/10.21203/rs.3.rs-8219833/v1"><b>Distributional genetic effects reveal context-dependent molecular regulation in human brain aging and Alzheimer's disease</b><span class="s10"><b></b></span></a></span></p>
-<p class="p28"><span class="s7">Liu A, Jiang R, </span><span class="s11"><b>Li R</b></span><span class="s7">, Cao X, ..., Wang T* &amp; Wang G* · </span><span class="s12"><i>Research Square</i></span><span class="s7"> · 2025</span></p>
-<p class="p32"><span class="s15"><b>UNDER REVISION → NATURE GENETICS</b><b></b></span></p>
-<p class="p27"><span class="s7"><b>GWAS highlights the neuronal contribution to multiple sclerosis susceptibility</b><b></b></span></p>
-<p class="p28"><span class="s7">Zeng L, Khan A, Lama T, ..., </span><span class="s11"><b>Li R</b></span><span class="s7">, De Jager P* · </span><span class="s12"><i>Research Square</i></span><span class="s7"> · 2025</span></p>
-<p class="p33"><span class="s16"><b>PUBLISHED · J CLIN TRANSL HEPATOL 2021</b><b></b></span></p>
-<p class="p27"><span class="s7"><b>Icaritin Attenuates Lipid Accumulation by Increasing Energy Expenditure and Autophagy Regulated by Phosphorylating AMPK</b><b></b></span></p>
-<p class="p28"><span class="s7">Wu Y, Yang Y, Li F, Zou J, Wang YH, ..., </span><span class="s11"><b>Li RX</b></span><span class="s7">, Sun YT, Lu S et al. · </span><span class="s12"><i>J Clin Transl Hepatol</i></span><span class="s7"> · 9(3):373–383</span></p>
-<p class="p33"><span class="s16"><b>PUBLISHED · CURR OPIN PHARMACOL 2021</b><b></b></span></p>
-<p class="p27"><span class="s7"><b>A double-edged sword: The Keap1-Nrf2-ARE pathway targeted pharmacological modulation in nonalcoholic fatty liver disease</b><b></b></span></p>
-<p class="p28"><span class="s7">Wang YL, Wu J, </span><span class="s11"><b>Li RX</b></span><span class="s7">, Sun YT, Ma YJ, Zhao CY, ..., Sun XD · </span><span class="s12"><i>Curr Opin Pharmacol</i></span><span class="s7"> · 60:281–290</span></p>
-<p class="p17"><span class="s7"><b>EXPERTISE</b><b></b></span></p>
-<h2 style="margin: 0.0px 0.0px 9.0px 0.0px; font: 24.0px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e"><span class="s7"><b>Skills &amp; Technologies</b><b></b></span></h2>
-<p class="p34"><span class="s7"><b>Computational</b><b></b></span></p>
-<p class="p35"><span class="s7"><b>Bioinformatics</b><b></b></span></p>
-<p class="p35"><span class="s7"><b>Stats &amp; Methods</b><b></b></span></p>
-<p class="p35"><span class="s7"><b>Wet Lab</b><b></b></span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">R / Bioconductor</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">Python</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">SAS</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">Bash / Shell Scripting</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">SQL / MySQL</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">AWS (S3, EC2, HPC)</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">HPC / SLURM</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">SoS Workflow</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p37"><span class="s3">Data Management</span></p>
-<p class="p36"><span class="s3"></span><br></p>
-<p class="p38"><span class="s8">Cloud Pipelines</span></p>
-<p class="p17"><span class="s3"><b>BACKGROUND</b></span></p>
-<h2 style="margin: 0.0px 0.0px 9.0px 0.0px; font: 24.0px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e"><span class="s3"><b>Education &amp; Experience</b></span></h2>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p39"><span class="s3"><b>FALL 2026 · INCOMING</b></span></p>
-<p class="p40"><span class="s3"><b>PhD — Computational Biology</b></span></p>
-<p class="p41"><span class="s3"><b>Incoming PhD Program</b></span></p>
-<p class="p42"><span class="s3">Building on multi-omics, statistical genetics, and systems biology foundations to advance computational approaches in biological research.</span></p>
-<p class="p43"><span class="s3"><b>Computational Biology</b></span></p>
-<p class="p43"><span class="s3"><b>Systems Biology</b></span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p39"><span class="s3"><b>SEP 2024 – PRESENT</b></span></p>
-<p class="p40"><span class="s3"><b>Research Associate &amp; Staff Associate</b></span></p>
-<p class="p41"><span class="s3"><b>Columbia University — Gertrude H. Sergievsky Center · PI: Prof. Gao Wang</b></span></p>
-<p class="p42"><span class="s3">Led 5 research projects on Alzheimer's disease genetics: neuroimaging endophenotypes (ASHG poster), SuSiE calibration improvement, summary statistics QC pipeline, distributional QTL mapping, and motor QTL pilot study. Managed large-scale data pipelines across AWS S3, HPC, FTP, and Synapse.</span></p>
-<p class="p43"><span class="s3"><b>xQTL</b></span></p>
-<p class="p43"><span class="s3"><b>Fine-mapping</b></span></p>
-<p class="p43"><span class="s3"><b>AWS</b></span></p>
-<p class="p43"><span class="s3"><b>SuSiE</b></span></p>
-<p class="p43"><span class="s3"><b>TWAS</b></span></p>
-<p class="p43"><span class="s3"><b>Neuroimaging</b></span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p39"><span class="s3"><b>MAY 2024</b></span></p>
-<p class="p40"><span class="s3"><b>Master of Public Health — Epidemiology</b></span></p>
-<p class="p41"><span class="s3"><b>Columbia University Mailman School of Public Health · GPA: 4.07/4.0 · Advanced Epi Certificate</b></span></p>
-<p class="p42"><span class="s3">Thesis: Pooled analysis of DASH diet and pancreatic cancer across 14 cohorts (n = 2,141,844). TA for Statistical Computation with SAS. Research on metabolomics in ME/CFS.</span></p>
-<p class="p43"><span class="s3"><b>Epidemiology</b></span></p>
-<p class="p43"><span class="s3"><b>SAS</b></span></p>
-<p class="p43"><span class="s3"><b>Survival Analysis</b></span></p>
-<p class="p43"><span class="s3"><b>Meta-analysis</b></span></p>
-<p class="p43"><span class="s3"><b>Causal Inference</b></span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p39"><span class="s3"><b>JUN 2022</b></span></p>
-<p class="p40"><span class="s3"><b>MBBS — Basic Medical Science</b></span></p>
-<p class="p41"><span class="s3"><b>West China Medical School, Sichuan University · GPA: 3.73/4.0 · Rank: 2/cohort · Outstanding Graduate</b></span></p>
-<p class="p42"><span class="s3">Lead author thesis on quercetin's radioprotective effects on keratinocytes. Research on icaritin and lipid metabolism. Protein–protein interaction study (AGAP2/LC3). Multiple awards including Outstanding Graduate.</span></p>
-<p class="p43"><span class="s3"><b>Cell Biology</b></span></p>
-<p class="p43"><span class="s3"><b>Molecular Biology</b></span></p>
-<p class="p43"><span class="s3"><b>Western Blot</b></span></p>
-<p class="p43"><span class="s3"><b>Signaling Pathways</b></span></p>
-<p class="p43"><span class="s3"><b>Outstanding Graduate</b></span></p>
-<p class="p17"><span class="s7"><b>CONTACT</b><b></b></span></p>
-<h2 style="margin: 0.0px 0.0px 9.0px 0.0px; font: 24.0px '.SF NS'; color: #0d172e; -webkit-text-stroke: #0d172e"><span class="s7"><b>Let's Connect</b><b></b></span></h2>
-<p class="p5"><span class="s3"><a href="mailto:rl60731470@gmail.com"></a></span><br></p>
-<p class="p21"><span class="s8"><a href="mailto:rl60731470@gmail.com"><b>EMAIL</b><span class="s3"><b></b></span></a></span></p>
-<p class="p44"><span class="s8"><a href="mailto:rl60731470@gmail.com"><b>rl60731470@gmail.com</b><span class="s17"><b></b></span></a></span></p>
-<p class="p5"><span class="s3"><a href="https://github.com/rl3328"></a></span><br></p>
-<p class="p21"><span class="s8"><a href="https://github.com/rl3328"><b>GITHUB</b><span class="s3"><b></b></span></a></span></p>
-<p class="p44"><span class="s8"><a href="https://github.com/rl3328"><b>github.com/rl3328</b><span class="s17"><b></b></span></a></span></p>
-<p class="p5"><span class="s3"><a href="https://www.linkedin.com/in/ruixi-li"></a></span><br></p>
-<p class="p21"><span class="s8"><a href="https://www.linkedin.com/in/ruixi-li"><b>LINKEDIN</b><span class="s3"><b></b></span></a></span></p>
-<p class="p44"><span class="s8"><a href="https://www.linkedin.com/in/ruixi-li"><b>https://www.linkedin.com/in/ruixi-li-/</b><span class="s17"><b></b></span></a></span></p>
-<h3 style="margin: 0.0px 0.0px 9.0px 0.0px; text-align: center; font: 18.0px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s7"><b>Open to Collaboration</b><b></b></span></h3>
-<p class="p46"><span class="s7">I'm always excited to discuss research, potential collaborations, or new opportunities in computational biology, statistical genetics, or multi-omics data science.</span></p>
-<p class="p47"><span class="s7"><a href="mailto:rl60731470@gmail.com"><b>Send a Message</b><span class="s18"><b></b></span></a></span></p>
-<p class="p48"><span class="s3">© 2026 Ruixi Li  ·  Columbia University  ·  <a href="https://github.com/rl3328"><span class="s19">GitHub</span></a>  ·  Built with HTML &amp; CSS</span></p>
+
+<nav>
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">Ruixi Li</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-btn" onclick="toggleTheme()">
+            <span class="moon">🌙</span><span class="sun">☀️</span> Toggle
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-mesh"></div>
+    <div class="hero-orbs">
+        <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+    </div>
+    <div class="hero-content">
+        <div>
+            <div class="eyebrow"><span class="edot"></span>Computational Biologist &amp; Genomics Researcher</div>
+            <h1 class="name">Ruixi Li</h1>
+            <div class="typed-line"><span id="typed"></span><span class="cursor"></span></div>
+            <p class="hero-bio">Research Associate at Columbia University studying the molecular mechanisms of Alzheimer's disease. Incoming PhD student in Computational Biology. Passionate about multi-omics, statistical genetics, and systems approaches to aging and neurological disorders.</p>
+            <div class="hero-btns">
+                <a href="mailto:rl60731470@gmail.com" class="btn btn-primary">
+                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                    Get in Touch
+                </a>
+                <a href="https://github.com/rl3328" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ruixi-li" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="avatar-wrap reveal">
+            <div class="avatar-ring">
+                <div class="avatar-inner">
+                    <!-- Replace with: <img src="YOUR_PHOTO_URL" alt="Ruixi Li" loading="lazy"> -->
+                    <div class="avatar-initials">RL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+    <div class="stats-row">
+        <div class="stat"><span class="stat-n" data-count="10">0</span><div class="stat-l">Publications &amp; Preprints</div></div>
+        <div class="stat"><span class="stat-n" data-count="3">0</span><div class="stat-l">Lead Author Projects</div></div>
+        <div class="stat"><span class="stat-n" data-count="5">0</span><div class="stat-l">Research Projects at Columbia</div></div>
+        <div class="stat"><span class="stat-n" data-count="2">0</span><div class="stat-l">Graduate Degrees</div></div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="alt">
+    <div class="container">
+        <p class="slabel reveal">About</p>
+        <h2 class="stitle reveal">Who I Am</h2>
+        <div class="about-grid">
+            <div class="about-body">
+                <p class="reveal">I'm currently working as a Research Associate at Columbia University's Gertrude H. Sergievsky Center in statistical and functional genomics, with a focus on Alzheimer's disease. My research interests lie in computational and systems biology, especially in aging, oncology, and neuropsychological disorders, using multi-omics data analysis.</p>
+                <p class="reveal">I have a solid foundation in biological signaling pathways and cellular mechanisms, supported by hands-on wet lab training. During my graduate studies, I also gained experience in causal inference and quantitative methods in epidemiological research.</p>
+                <p class="reveal">I thrive in interdisciplinary environments, am a fast learner, and deeply value collaborative science — bridging dry and wet lab approaches in molecular and computational biology.</p>
+                <div class="itags reveal">
+                    <span class="itag">Alzheimer's Disease</span>
+                    <span class="itag">xQTL Mapping</span>
+                    <span class="itag">Multi-omics</span>
+                    <span class="itag">Statistical Genetics</span>
+                    <span class="itag">Fine-mapping</span>
+                    <span class="itag">Neuroimaging</span>
+                    <span class="itag">Causal Inference</span>
+                    <span class="itag">Machine Learning</span>
+                    <span class="itag">Aging Biology</span>
+                    <span class="itag">Systems Biology</span>
+                </div>
+            </div>
+            <div class="info-cards">
+                <div class="icard reveal"><div class="icard-l">Current Role</div><div class="icard-v">Research Associate, Columbia University Sergievsky Center</div></div>
+                <div class="icard reveal"><div class="icard-l">Upcoming</div><div class="icard-v">Incoming PhD Student, Computational Biology · Fall 2025</div></div>
+                <div class="icard reveal"><div class="icard-l">Education</div><div class="icard-v">MPH, Columbia (GPA 4.07) · MBBS, West China Medical School (Rank 2)</div></div>
+                <div class="icard reveal"><div class="icard-l">Consortium</div><div class="icard-v">FunGen-xQTL · ASHG (2025–)</div></div>
+                <div class="icard reveal"><div class="icard-l">Infrastructure</div><div class="icard-v">AWS S3 / EC2 · HPC (SLURM) · Large-scale bioinformatics pipelines</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+    <div class="container">
+        <p class="slabel reveal">Research</p>
+        <h2 class="stitle reveal">Publications &amp; Preprints</h2>
+        <p class="ssub reveal">Focused on Alzheimer's disease functional genomics, statistical fine-mapping, and multi-omics integration.</p>
+        <div class="pub-filters reveal">
+            <button class="filt active" onclick="filterPubs('all',this)">All</button>
+            <button class="filt" onclick="filterPubs('lead',this)">Lead Author</button>
+            <button class="filt" onclick="filterPubs('preprint',this)">Preprints</button>
+            <button class="filt" onclick="filterPubs('published',this)">Published</button>
+        </div>
+        <div class="pub-list">
+            <div class="pub reveal" data-type="lead preprint">
+                <span class="pbadge b1">★ Lead Author · In Submission → Nature Aging</span>
+                <div class="pub-title"><a href="https://doi.org/10.1101/2025.11.25.25340884" target="_blank" rel="noopener">Neuroimaging-derived brain endophenotypes link molecular mechanisms to Alzheimer's disease and aging</a></div>
+                <div class="pub-meta"><span class="pub-me">Li R</span>, Feng R, Liu A, Cao X, De Jager P, Bennett D, The FunGen-AD Consortium, Davatzikos C*, Wen J* &amp; Wang G* · <span class="pub-journal">medRxiv</span> · 2025</div>
+            </div>
+            <div class="pub reveal" data-type="preprint">
+                <span class="pbadge b2">Under Review → Nature Methods</span>
+                <div class="pub-title"><a href="https://doi.org/10.1101/2025.05.16.654543" target="_blank" rel="noopener">Accounting for uncertainty in residual variances improves calibration of the "Sum of Single Effects" model for small sample sizes</a></div>
+                <div class="pub-meta">Denault WR, Carbonetto P, <span class="pub-me">Li R</span>, FunGen-AD Consortium, Wang G* &amp; Stephens M* · <span class="pub-journal">bioRxiv</span> · 2025</div>
+            </div>
+            <div class="pub reveal" data-type="preprint">
+                <span class="pbadge b3">In Submission → Genome Biology</span>
+                <div class="pub-title"><a href="https://doi.org/10.1101/2025.11.25.690514" target="_blank" rel="noopener">SuSiE 2.0: improved methods and implementations for genetic fine-mapping and phenotype prediction</a></div>
+                <div class="pub-meta">McCreight A, Cho Y, <span class="pub-me">Li R</span>, Nachun D, Gan H, Carbonetto P, Stephens M, Denault WRP* &amp; Wang G* · <span class="pub-journal">bioRxiv</span> · 2025</div>
+            </div>
+            <div class="pub reveal" data-type="preprint">
+                <span class="pbadge b4">In Submission → Nature Neuroscience</span>
+                <div class="pub-title"><a href="https://doi.org/10.21203/rs.3.rs-8219833/v1" target="_blank" rel="noopener">Distributional genetic effects reveal context-dependent molecular regulation in human brain aging and Alzheimer's disease</a></div>
+                <div class="pub-meta">Liu A, Jiang R, <span class="pub-me">Li R</span>, Cao X, ..., Wang T* &amp; Wang G* · <span class="pub-journal">Research Square</span> · 2025</div>
+            </div>
+            <div class="pub reveal" data-type="preprint">
+                <span class="pbadge b5">Under Revision → Nature Genetics</span>
+                <div class="pub-title">GWAS highlights the neuronal contribution to multiple sclerosis susceptibility</div>
+                <div class="pub-meta">Zeng L, Khan A, Lama T, ..., <span class="pub-me">Li R</span>, De Jager P* · <span class="pub-journal">Research Square</span> · 2025</div>
+            </div>
+            <div class="pub reveal" data-type="published">
+                <span class="pbadge b6">Published · J Clin Transl Hepatol 2021</span>
+                <div class="pub-title">Icaritin Attenuates Lipid Accumulation by Increasing Energy Expenditure and Autophagy Regulated by Phosphorylating AMPK</div>
+                <div class="pub-meta">Wu Y, Yang Y, Li F, ..., <span class="pub-me">Li RX</span>, Sun YT, Lu S et al. · <span class="pub-journal">J Clin Transl Hepatol</span> · 9(3):373–383</div>
+            </div>
+            <div class="pub reveal" data-type="published">
+                <span class="pbadge b6">Published · Curr Opin Pharmacol 2021</span>
+                <div class="pub-title">A double-edged sword: The Keap1-Nrf2-ARE pathway targeted pharmacological modulation in nonalcoholic fatty liver disease</div>
+                <div class="pub-meta">Wang YL, Wu J, <span class="pub-me">Li RX</span>, Sun YT, ..., Sun XD · <span class="pub-journal">Curr Opin Pharmacol</span> · 60:281–290</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="alt">
+    <div class="container">
+        <p class="slabel reveal">Expertise</p>
+        <h2 class="stitle reveal">Skills &amp; Technologies</h2>
+        <div class="stabs reveal">
+            <button class="stab on" onclick="showTab('computational',this)">Computational</button>
+            <button class="stab" onclick="showTab('bioinformatics',this)">Bioinformatics</button>
+            <button class="stab" onclick="showTab('stats',this)">Stats &amp; Methods</button>
+            <button class="stab" onclick="showTab('wetlab',this)">Wet Lab</button>
+        </div>
+        <div id="t-computational" class="spane on reveal">
+            <div class="sgrid">
+                <div class="sk"><span class="sdot"></span>R / Bioconductor</div>
+                <div class="sk"><span class="sdot"></span>Python</div>
+                <div class="sk"><span class="sdot"></span>SAS</div>
+                <div class="sk"><span class="sdot"></span>Bash / Shell Scripting</div>
+                <div class="sk"><span class="sdot"></span>SQL / MySQL</div>
+                <div class="sk"><span class="sdot"></span>AWS (S3, EC2, HPC)</div>
+                <div class="sk"><span class="sdot"></span>HPC / SLURM</div>
+                <div class="sk"><span class="sdot"></span>SoS Workflow</div>
+                <div class="sk"><span class="sdot"></span>STATA</div>
+                <div class="sk"><span class="sdot"></span>Cytoscape</div>
+                <div class="sk"><span class="sdot"></span>Data Management</div>
+                <div class="sk"><span class="sdot"></span>Cloud Pipelines</div>
+            </div>
+        </div>
+        <div id="t-bioinformatics" class="spane reveal">
+            <div class="sgrid">
+                <div class="sk"><span class="sdot"></span>xQTL Mapping</div>
+                <div class="sk"><span class="sdot"></span>Fine-mapping (SuSiE)</div>
+                <div class="sk"><span class="sdot"></span>TWAS / GWAS Analysis</div>
+                <div class="sk"><span class="sdot"></span>Colocalization</div>
+                <div class="sk"><span class="sdot"></span>TensorQTL</div>
+                <div class="sk"><span class="sdot"></span>sLDSC</div>
+                <div class="sk"><span class="sdot"></span>Multi-omics Integration</div>
+                <div class="sk"><span class="sdot"></span>GO / KEGG Enrichment</div>
+                <div class="sk"><span class="sdot"></span>eQTL Discovery</div>
+                <div class="sk"><span class="sdot"></span>Population Genetics</div>
+                <div class="sk"><span class="sdot"></span>Neuroimaging Genetics</div>
+                <div class="sk"><span class="sdot"></span>LD Analysis</div>
+            </div>
+        </div>
+        <div id="t-stats" class="spane reveal">
+            <div class="sgrid">
+                <div class="sk"><span class="sdot"></span>Statistical Genetics</div>
+                <div class="sk"><span class="sdot"></span>Bayesian Methods</div>
+                <div class="sk"><span class="sdot"></span>Machine Learning</div>
+                <div class="sk"><span class="sdot"></span>Causal Inference</div>
+                <div class="sk"><span class="sdot"></span>Survival Analysis</div>
+                <div class="sk"><span class="sdot"></span>Cox Regression</div>
+                <div class="sk"><span class="sdot"></span>Meta-analysis / Pooling</div>
+                <div class="sk"><span class="sdot"></span>Restricted Cubic Splines</div>
+                <div class="sk"><span class="sdot"></span>Mixed Effects Models</div>
+                <div class="sk"><span class="sdot"></span>Epidemiology Methods</div>
+                <div class="sk"><span class="sdot"></span>Measurement &amp; Assessment</div>
+                <div class="sk"><span class="sdot"></span>Exploratory Data Analysis</div>
+            </div>
+        </div>
+        <div id="t-wetlab" class="spane reveal">
+            <div class="sgrid">
+                <div class="sk"><span class="sdot"></span>Cell / Tissue Culture</div>
+                <div class="sk"><span class="sdot"></span>Western Blot</div>
+                <div class="sk"><span class="sdot"></span>qRT-PCR</div>
+                <div class="sk"><span class="sdot"></span>Immunofluorescence</div>
+                <div class="sk"><span class="sdot"></span>Confocal Microscopy</div>
+                <div class="sk"><span class="sdot"></span>Flow Cytometry</div>
+                <div class="sk"><span class="sdot"></span>Protein Purification</div>
+                <div class="sk"><span class="sdot"></span>Transfection &amp; Transformation</div>
+                <div class="sk"><span class="sdot"></span>SRB / Annexin V Staining</div>
+                <div class="sk"><span class="sdot"></span>β-Galactosidase Staining</div>
+                <div class="sk"><span class="sdot"></span>DHE Staining</div>
+                <div class="sk"><span class="sdot"></span>Wound Healing Assay</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="container">
+        <p class="slabel reveal">Background</p>
+        <h2 class="stitle reveal">Education &amp; Experience</h2>
+        <div class="tl">
+            <div class="tli reveal">
+                <div class="tldot"></div>
+                <div class="tldate">Fall 2025 · Incoming</div>
+                <div class="tltitle">PhD — Computational Biology</div>
+                <div class="tlorg">Incoming PhD Program</div>
+                <div class="tldesc">Building on multi-omics, statistical genetics, and systems biology foundations to advance computational approaches in biological research.</div>
+                <div class="tltags"><span class="tltag">Computational Biology</span><span class="tltag">Systems Biology</span></div>
+            </div>
+            <div class="tli reveal">
+                <div class="tldot"></div>
+                <div class="tldate">Sep 2024 – Present</div>
+                <div class="tltitle">Research Associate &amp; Staff Associate</div>
+                <div class="tlorg">Columbia University — Gertrude H. Sergievsky Center · PI: Prof. Gao Wang</div>
+                <div class="tldesc">Led 5 research projects on Alzheimer's disease genetics: neuroimaging endophenotypes (ASHG poster), SuSiE calibration improvement, summary statistics QC pipeline, distributional QTL mapping, and motor QTL pilot study. Managed large-scale data pipelines across AWS S3, HPC, FTP, and Synapse.</div>
+                <div class="tltags"><span class="tltag">xQTL</span><span class="tltag">Fine-mapping</span><span class="tltag">AWS</span><span class="tltag">SuSiE</span><span class="tltag">TWAS</span><span class="tltag">Neuroimaging</span></div>
+            </div>
+            <div class="tli reveal">
+                <div class="tldot"></div>
+                <div class="tldate">May 2024</div>
+                <div class="tltitle">Master of Public Health — Epidemiology</div>
+                <div class="tlorg">Columbia University Mailman School of Public Health · GPA: 4.07/4.0 · Advanced Epi Certificate</div>
+                <div class="tldesc">Thesis: Pooled analysis of DASH diet and pancreatic cancer across 14 cohorts (n = 2,141,844). TA for Statistical Computation with SAS. Research on metabolomics in ME/CFS.</div>
+                <div class="tltags"><span class="tltag">Epidemiology</span><span class="tltag">SAS</span><span class="tltag">Survival Analysis</span><span class="tltag">Meta-analysis</span><span class="tltag">Causal Inference</span></div>
+            </div>
+            <div class="tli reveal">
+                <div class="tldot"></div>
+                <div class="tldate">Jun 2022</div>
+                <div class="tltitle">MBBS — Basic Medical Science</div>
+                <div class="tlorg">West China Medical School, Sichuan University · GPA: 3.73/4.0 · Rank: 2 · Outstanding Graduate</div>
+                <div class="tldesc">Lead author thesis on quercetin's radioprotective effects on keratinocytes. Research on icaritin and lipid metabolism. Protein–protein interaction study (AGAP2/LC3). Multiple honors including Outstanding Graduate.</div>
+                <div class="tltags"><span class="tltag">Cell Biology</span><span class="tltag">Molecular Biology</span><span class="tltag">Western Blot</span><span class="tltag">Signaling Pathways</span><span class="tltag">Outstanding Graduate</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+    <div class="container">
+        <p class="slabel reveal">Contact</p>
+        <h2 class="stitle reveal">Let's Connect</h2>
+        <div class="contact-grid">
+            <div class="clinks reveal">
+                <a href="mailto:rl60731470@gmail.com" class="clink">
+                    <div class="cicon"><svg viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg></div>
+                    <div><div class="clbl">Email</div><div class="cval">rl60731470@gmail.com</div></div>
+                </a>
+                <a href="https://github.com/rl3328" target="_blank" rel="noopener" class="clink">
+                    <div class="cicon"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div>
+                    <div><div class="clbl">GitHub</div><div class="cval">github.com/rl3328</div></div>
+                </a>
+                <a href="https://www.linkedin.com/in/ruixi-li" target="_blank" rel="noopener" class="clink">
+                    <div class="cicon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+                    <div><div class="clbl">LinkedIn</div><div class="cval">linkedin.com/in/ruixi-li</div></div>
+                </a>
+            </div>
+            <div class="ccta reveal">
+                <h3>Open to Collaboration</h3>
+                <p>I'm always excited to discuss research, potential collaborations, or new opportunities in computational biology, statistical genetics, or multi-omics data science.</p>
+                <a href="mailto:rl60731470@gmail.com" class="btn-w">Send a Message</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ruixi Li &nbsp;·&nbsp; Columbia University &nbsp;·&nbsp;
+    <a href="https://github.com/rl3328" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp; Built with HTML &amp; CSS</p>
+</footer>
+
+<script>
+    function toggleTheme() {
+        const h = document.documentElement;
+        const next = h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        h.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    }
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+
+    // Typed text
+    const phrases = [
+        'Incoming Computational Biology PhD Student',
+        'Statistical Genomics Researcher',
+        'Multi-omics Data Analyst',
+        'AWS & HPC Power User',
+        "Alzheimer's Disease Researcher",
+        'Systematic Benchmarking Enthusiast'
+    ];
+    let pi = 0, ci = 0, del = false;
+    function typeLoop() {
+        const el = document.getElementById('typed');
+        if (!el) return;
+        const phrase = phrases[pi];
+        if (!del) {
+            el.textContent = phrase.slice(0, ++ci);
+            if (ci === phrase.length) { del = true; setTimeout(typeLoop, 2200); return; }
+        } else {
+            el.textContent = phrase.slice(0, --ci);
+            if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; }
+        }
+        setTimeout(typeLoop, del ? 35 : 60);
+    }
+    typeLoop();
+
+    // Scroll reveal
+    const ro = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+                setTimeout(() => e.target.classList.add('visible'), i * 70);
+                ro.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+    // Animated counters
+    const co = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            const el = e.target, target = +el.dataset.count;
+            let cur = 0;
+            const t = setInterval(() => {
+                cur = Math.min(cur + Math.max(target / 40, 0.5), target);
+                el.textContent = Math.floor(cur) + '+';
+                if (cur >= target) { el.textContent = target + '+'; clearInterval(t); }
+            }, 45);
+            co.unobserve(el);
+        });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count]').forEach(el => co.observe(el));
+
+    // Skill tabs
+    function showTab(id, btn) {
+        document.querySelectorAll('.spane').forEach(p => p.classList.remove('on'));
+        document.querySelectorAll('.stab').forEach(b => b.classList.remove('on'));
+        document.getElementById('t-' + id).classList.add('on');
+        btn.classList.add('on');
+    }
+
+    // Publication filters
+    function filterPubs(type, btn) {
+        document.querySelectorAll('.filt').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.pub').forEach(card => {
+            if (type === 'all') { card.removeAttribute('data-hidden'); }
+            else {
+                const types = (card.dataset.type || '').split(' ');
+                card.dataset.hidden = types.includes(type) ? '' : '1';
+            }
+        });
+    }
+
+    // Active nav on scroll
+    const secs = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+        let cur = '';
+        secs.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+        document.querySelectorAll('.nav-links a').forEach(a => {
+            a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : '';
+        });
+    }, { passive: true });
+</script>
 </body>
 </html>
